@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bot/css/bootstrap.min.css" />
+    <script type="text/javascript" src="./bot/css/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+      body {
+        background: blur(5px);
+      }
+
+      .containero {
+        padding: 2px 16px;
+      }
+      .containero img {
+        width: 20px;
+        margin-left: 1rem;
+      }
+      /* .containero #vi {
+        margin-left: 1rem;
+      } */
+      .pe {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+        margin-top: 4rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background: none;
+      }
+
+      .vl {
+        position: absolute;
+        left: 52%;
+        top: 15.6rem;
+        transform: translate(-50%);
+        border: 2px solid #ddd;
+        width: 17rem;
+      }
+
+      /* text inside the vertical line */
+      .vl-innertext {
+        position: absolute;
+        top: 1rem;
+        left: 5rem;
+        transform: translate(-50%, -50%);
+        background-color: #f1f1f1;
+        border: 1px solid #cccc;
+        border-radius: 10%;
+        padding: 4px 2rem;
+      }
+      .vl-innertextx {
+        position: absolute;
+        top: 1px;
+        left: 19.3rem;
+        transform: translate(-50%, -50%);
+        background-color: #f1f1f1;
+        border: 1px solid #cccc;
+        border-radius: 10%;
+        padding: 4px 2rem;
+      }
+      .so {
+        position: absolute;
+
+        transform: translate(-50%, -50%);
+        background-color: #f1f1f1;
+        border: none;
+        border-radius: 10%;
+      }
+      form {
+        margin-bottom: 9px;
+      }
+      form input[type="text"],
+      [type="password"] {
+        border-radius: 2px;
+        border: none;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+      }
+      form b {
+        font-size: 12px;
+      }
+      form input[type="submit"] {
+        margin-top: 13px;
+        border: none;
+        padding: 4px;
+      }
+      .ok {
+        width: 16.5rem;
+      }
+      .ok img {
+        width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4"></div>
+        <div class="col-sm-4 col-md-4 col-lg-3">
+          <form action="login.php" method="POST" class="pe">
+            <h5>Login</h5>
+            <input
+              type="text"
+              name="user"
+              placeholder="email"
+              maxlength="60"
+            /><br />
+            <input
+              type="password"
+              name="pass"
+              placeholder="password"
+              maxlength="60"
+            /><br />
+            <input type="checkbox" name="passo" /> <b>Remember password</b>
+            <br />
+            <input type="submit" name="login" value="Login" />
+          </form>
+          <div class="btn-group ok btn btn-info">
+            <button type="button" class="btn">
+              <img src="fb.png" alt="" />
+            </button>
+            <button type="button" class="btn">
+              <img src="te.png" alt="" />
+            </button>
+            <button type="button" class="btn">
+              <img src="ig.png" alt="" />
+            </button>
+            <a href="sign.html"
+              ><button type="button" class="btn">Signup</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <?php
+$conn=mysqli_connect('localhost','root','','pro');
+if (isset($_POST['login'])) {
+    $maill=$_POST['user'];
+    $passs=$_POST['pass'];
+    $select=mysqli_query($conn,"select * from users where email='$maill' AND password='$passs'") or die('Fail to execute'.mysqli_error($conn));
+    $check=mysqli_fetch_array($select);
+    $check['userid'];
+    if(mysqli_num_rows($select)==1)
+   {
+    $_SESSION['userid']=$check['userid'];
+    $_SESSION['usermail']=$maill;
+       echo "<script>alert('Welcome');
+   window.location.href='create.php';
+   </script>
+       ";
+   }
+   else
+   {
+   echo
+     "
+   <script>
+   alert('Incorrect Username or Password');
+  //  window.location.href='login.php';
+   </script>
+       ";
+   }
+   
+}
+?> -->
+  </body>
+</html>
