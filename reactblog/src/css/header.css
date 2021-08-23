@@ -1,0 +1,7 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  /* background: gray; */
+  border: 2px solid rgb(87, 78, 78);
+}

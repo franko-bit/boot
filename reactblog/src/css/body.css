@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+
+  /* background: gray; */
+  /* border: 2px solid rgb(87, 78, 78); */
+}
+
+.container h5 {
+  margin-top: 20px;
+  background: indianred;
+  padding: 1rem;
+  border: none;
+}
+.form .two {
+  display: flex;
+  justify-content: space-around;
+}
+.form .bfield {
+  display: block;
+  padding: 0;
+  width: 100%;
+}
+.form .two input {
+  padding: 10px;
+}
+.form .bfield input {
+  width: 62%;
+  padding: 10px;
+}
+.form .bfield textarea {
+  width: 59%;
+  padding: 2rem;
+}
+.form .btn button {
+  margin-top: 20px;
+  background: indianred;
+  padding: 14px;
+  border: none;
+  position: absolute;
+  left: 16rem;
+}

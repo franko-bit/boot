@@ -1,0 +1,12 @@
+/* .containerr {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  margin-top: 7rem;
+  /* justify-content: space-around; */
+/* justify-items: center; */
+
+.one {
+  border: 2px solid gray;
+  display: inline;
+}
